@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D1C3C8EF-261E-4B9A-827A-1B7370896E0D}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		docker-compose.override.yml = docker-compose.override.yml
+		docker-compose.yml = docker-compose.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{945A6E42-4A42-4739-8BD8-181BBDF5AAA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "redis", "redis", "{05829D45-0CD0-424F-BE07-6AACE9176831}"
+	ProjectSection(SolutionItems) = preProject
+		docker\redis\Dockerfile = docker\redis\Dockerfile
+		docker\redis\redis.conf = docker\redis\redis.conf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq", "rabbitmq", "{7F600D8A-4D8F-42E2-A2DE-88477C0985AF}"
+	ProjectSection(SolutionItems) = preProject
+		docker\rabbitmq\Dockerfile = docker\rabbitmq\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sqlserver", "sqlserver", "{D5B2210F-7D3C-4E1B-9B7A-C4AA0AACDE71}"
+	ProjectSection(SolutionItems) = preProject
+		docker\sqlserver\Dockerfile = docker\sqlserver\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "seq", "seq", "{2908DD2C-B8FD-41D6-A3D3-3A9285FE554D}"
+	ProjectSection(SolutionItems) = preProject
+		docker\seq\Dockerfile = docker\seq\Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{05829D45-0CD0-424F-BE07-6AACE9176831} = {945A6E42-4A42-4739-8BD8-181BBDF5AAA1}
+		{7F600D8A-4D8F-42E2-A2DE-88477C0985AF} = {945A6E42-4A42-4739-8BD8-181BBDF5AAA1}
+		{D5B2210F-7D3C-4E1B-9B7A-C4AA0AACDE71} = {945A6E42-4A42-4739-8BD8-181BBDF5AAA1}
+		{2908DD2C-B8FD-41D6-A3D3-3A9285FE554D} = {945A6E42-4A42-4739-8BD8-181BBDF5AAA1}
+	EndGlobalSection
+EndGlobal
