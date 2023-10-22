@@ -55,3 +55,12 @@ jobs:
           file: ./docker/seq/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/gsweb-seq:latest
+
+      - name: Regenerate environments on Aruba
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+                    bash /docker/gestionesagre/rigeneraInfrastruttura.sh
