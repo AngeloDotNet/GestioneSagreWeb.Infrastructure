@@ -1,5 +1,4 @@
 FROM datalust/seq:2023.4
-#FROM datalust/seq:2023.3
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
